@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+ <title>Kid</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">    
+    <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon.png" />   
+        <link href="https://fonts.googleapis.com/css?family=Candal|Carme|Marmelad|Vesper+Libre" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+     <script src="js/calendar.js"></script>  
+       
+</head>
+<style>
+table caption{
+    text-align: center;
+}
+table, th, td
+  {
+  font-size: 1.2em;
+  border: 1px solid black;
+  }
+  th, td{
+  vertical-align: top;
+  border: 1px solid black;
+  }
+  th{
+  background-color:  yellow;
+  color: purple;
+  text-align: left;
+    padding-left: 2px;
+    padding-left: 2px;
+  }
+  tr:nth-of-type(even){
+  background-color: #d3ee8c;
+  }
+  tr:nth-of-type(odd){
+  background-color: #e9f0d6;
+  }
+#main {
+    margin-top: -10px;    
+}
+#quote {
+    font-size: 1.5em;
+    font-style: italic;
+    padding-left: 3px;
+    font-family: 'Carme', sans-serif;
+    line-height: 150%;    
+}
+#quote_author {
+    text-align: right;
+    padding-right: 3px;   
+}
+#quote_block{
+    background-color: #e9f0d6;    
+}
+#main_image{
+    margin-top: 25px;
+}
+</style>
+<body>
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="true">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" a href="index.html"><img src="img/kids6.png" alt="Kids Site"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class ="active"><a style = "color: red; background-color: #0ba8aa;" href="index.html">Home</a></li>
+        <li><a style= "color: green" href="pic.html">Pictures</a></li>
+        <li class="dropdown">
+          <a style= "color: orange" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Activities <span class="caret"></span></a>
+            
+          <ul class="dropdown-menu">
+            <li><a style= "color: orange" href="idioms.html">Idioms</a></li>           
+            <li role="separator" class="divider"></li>
+            <li><a style= "color: blue" href="critical.html">Critical Thinking</a></li>
+             </ul>
+        </li>
+        <li><a style= "color:  #aa2d0b" href="books.html">Our Books</a></li>
+             <li><a style= "color: grey" href="form.html">Order Class</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a style= "color: blue" href="sign.html">Sign in</a></li>
+        
+        <li class="dropdown">
+          <a href="#" style= "color: green" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our classes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Math</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Computer</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Add new class</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>About Us</h1>
+<h1 id="right"> <span id="time">00:00:00</span></h1>
+<script type="text/javascript">
+window.onload=changeAlert; 
+update_time();
+today = new Date();
+</script>
+					</div>
+				</div>
+			</div>
+	</div>	        
+        <div class="section" id ="main">
+	    	<div class="container">
+				<div class="row">
+					<div class="col-sm-5 col-md-5">
+						<h3>Social skills for kids</h3>
+						<p>We are social site for kids. They can share their stories, projects, pictures, photos, they can discuss some interesting news and games. It is a place for bringing them together for fun as well as to teach them some social skills.
+						<p>We want to teach kids how to communivate online, to be respectful, to appreciate others efforts. Listening to others and being listened are the basic social demands for us all. We also will provide some educational content: puzzles, quizes, problems.
+</p>
+<h3>Creative use of computers</h3>
+<p>We'd like kids to use computers not only for video games, but also for new knowledge and for inspiration for some new projects. Kids are welcome to share new resources, new ideas how to create something interesting. 
+</p>						
+					</div>
+					<div class="col-sm-4 col-md-4">
+                        <div id="quote_block">
+                        <p id ="quote"></p>
+                        <p id ="quote_author"></p>
+                        </div>
+						<div class="images" id="main_image">
+							<img src="img/1.jpg" class="img-responsive">
+						</div>
+                        
+					</div>
+<div class="col-sm-2 col-md-2">
+						<h2>Calendar</h2>
+<p><script>
+fill(today);
+</script></p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+<br>
+		<!-- Press Coverage -->
+       		<div class="section section-share">
+	        <div class="container">
+	        	<h2>Our clubs</h2>
+	        	<div class="row">
+	        		<div class="col-md-3 col-sm-6">
+	        			<div class="service-wrapper">
+		        			<img src="img/Bot-64.png" alt="Service Name">
+		        			<h3>IT projects</h3>
+		        			<p>Have you created interesting project with help of computer programms? Share it in our club! <a href="javascript: create_PopUP('computer.html'); ">Read more</a></p>
+	        			</div>
+	        		</div>
+	        		<div class="col-md-3 col-sm-6">
+	        			<div class="service-wrapper">
+		        			<img src="img/parachute.png" alt="Service Name">
+		        			<h3>Inspiration</h3>
+		        			<p>Share the resources that inspired you to create something new. <a href="javascript: create_PopUP('computer.html'); ">Read more</a></p>
+		        		</div>
+	        		</div>
+	        		<div class="col-md-3 col-sm-6">
+	        			<div class="service-wrapper">
+		        			<img src="img/sites.png" alt="Service Name">
+		        			<h3>Interesting sites</h3>
+		        			<p>Share interesting and educative sites. <a href="javascript: create_PopUP('sci_tut.html'); ">Read more</a></p>
+		        		</div>
+	        		</div>
+	        		<div class="col-md-3 col-sm-6">
+	        			<div class="service-wrapper">
+		        			<img src="img/innovation.png" alt="Service Name">
+		        			<h3>Useful games</h3>
+		        			<p>Share interesting games. <a href="javascript: create_PopUP('sci_tut.html'); ">Read more</a></p>
+	        			</div>
+	        		</div>	        		
+	        	</div>
+	        </div>
+	    </div>
+<script>
+    function create_PopUP(link) {    
+        var myWin = window.open(link, "", "height=500,width=300,scrollbars, resizable");
+        myWin.focus(); 
+    }
+</script>
+	    <!-- Footer -->
+	    <div class="footer">
+	    	<div class="container">
+		    	<div class="row">
+		    		<div class="col-footer col-md-3 col-xs-6">
+		    			<h3>Search</h3>
+		    			<div class="portfolio-item">
+							<div class="portfolio-image">
+								<input class="form-control" id="Search" name="Search" type="text"/>
+							</div>
+						</div>
+		    		</div>
+		    		<div class="col-footer col-md-3 col-xs-6">
+		    			<h3>Navigate</h3>
+		    			<ul class="no-list-style footer-navigate-section">
+		    			<li><a href="../index.html">My student's portfolio</a></li>
+		    				<li><a href="pic.html">Pictures</a></li>
+                            <li><a href="idioms.html">Idioms</a></li>		    				
+		    				<li><a href="ct.html">Critical thinking</a></li>
+		    			</ul>
+		    		</div>
+		    		
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Contacts</h3>
+		    			<p class="contact-us-details">
+	        				
+	        			</p>
+		    		</div>
+		    		<div class="col-footer col-md-2 col-xs-6">
+		    			<h3>Stay Connected</h3>
+		    			<ul class="footer-stay-connected no-list-style">
+		    				<li><a href="#" class="facebook">facebook</a></li>
+		    				</ul>
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-md-12">
+		    			<div class="footer-copyright">&copy; 2016 Julia Borodaenko.</div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+<script src="js/menu.js"></script> 
+        </body>
+</html>
+

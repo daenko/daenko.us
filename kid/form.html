@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon.png" />   
+        <link href="https://fonts.googleapis.com/css?family=Candal|Carme|Marmelad|Vesper+Libre" rel="stylesheet">
+ <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+         
+<style>
+label {
+  float:left;
+  width:25%;
+  margin-right:0.4em;
+  padding-top:0.1em;
+  text-align:right;
+  font-weight:bold;
+}
+.form-control   {
+			width: 25em;
+            height: 2em;
+            padding-left: 5px;
+           
+} 
+table {
+width:90%;
+margin:auto;
+margin-top: 30px;
+}
+th {
+    height: 2em;
+    background-color:  yellow;
+    color: purple;
+    text-align: center;
+    padding-left: 2px;
+    padding-left: 2px;    
+}
+td {
+    height: 2em;
+    font-size: 1.2em;
+    height: 2em;
+    padding-left: 2px;
+    padding-left: 2px;
+    font-family: 'Carme', sans-serif;    
+}  
+tr:nth-of-type(even){
+  background-color: #d3ee8c;
+  }
+  tr:nth-of-type(odd){
+  background-color: #e9f0d6;
+  }
+.result {
+    width: 15em;
+    color:purple;
+    text-align: center;
+    font-style: bold;
+    font-size: 1.4em;
+}
+.num {
+    width: 10em;
+    text-align: left;
+}
+.cat_name {
+    font-family: 'Carme', sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+    background-color: lightyellow;
+}
+.right {
+   
+    width: 15em;
+    color:purple;
+    text-align: right;
+    font-style: bold;
+    font-size: 1.2em;
+    padding-right: 0.2em;
+}
+</style>
+        </head>
+    <body>
+       <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="true">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" a href="index.html"><img src="img/kids6.png" alt="Kids Site"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a style = "color: red" href="index.html">Home</a></li>
+        <li><a style= "color: green" href="pic.html">Pictures</a></li>
+        <li class="dropdown">
+          <a style= "color: orange" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Activities <span class="caret"></span></a>
+            
+          <ul class="dropdown-menu">
+            <li><a style= "color: orange" href="idioms.html">Idioms</a></li>           
+            <li role="separator" class="divider"></li>
+            <li><a style= "color: blue" href="critical.html">Critical Thinking</a></li>
+             </ul>
+        </li>
+        <li><a style= "color:  #aa2d0b" href="books.html">Our Books</a></li>
+             <li class ="active"><a style= "color: grey; background-color: #0ba8aa;" href="form.html">Order Class</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a style= "color: blue" href="sign.html">Sign in</a></li>
+        
+        <li class="dropdown">
+          <a href="#" style= "color: green" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our classes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Math</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Computer</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Add new class</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Order Classes Form</h1>
+
+					</div>
+				</div>
+			</div>
+	</div>	        
+        <div class="section" id ="main">
+	    	<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12">						
+						<h2>Form for parents to order classes</h2>
+  <form  class="form-horizontal" method="post" action="http://voyager.deanza.edu/~hso/cgi-bin/form420.cgi" name="myForm" onsubmit="return(validate());"> 
+
+<div class = "table-responsive">
+<table class="table">
+           <tr>
+<th>Category</th><th>Desciption</th><th>Price for 2-hours class </th><th>Quantity</th><th>Total Price</th></tr>
+            <tr>
+               <td rowspan = '2' class ="cat_name">Science club </td>
+               <td>For ages 8-10</td>
+<td>$10</td>
+<td><input type="number" name="quantity1" class = "num" value="0" onChange="calculate_cost('quantity1',10,'cost1')"></td>
+ <td class = "result"><input type="text" readonly name="cost1"></td>
+</tr>
+<tr>
+               <td>For ages 11-13</td>
+               
+               <td>$12</td>
+               
+               <td><input type="number" name="quantity2" class = "num" value="0" onChange="calculate_cost('quantity2',12,'cost2')"></td>              
+               <td  class = "result"><input type="text" readonly name="cost2"></td>
+            </tr>
+<tr>
+ <td colspan="4" class ="right">Subtotal $</td>
+<td class = "result"><input type="text" readonly name="subtotal1"></td>
+</tr>  
+ <tr>
+               <td rowspan = '2' class ="cat_name">Math club</td>
+               <td>Honor club</td>
+<td id = "price3">$15</td>
+<td><input type="number" name="quantity3" class = "num" value="0" onChange="calculate_cost('quantity3',15,'cost3')"></td>
+ <td  class = "result"> <input type="text" readonly name="cost3"></td>
+</tr>
+
+<tr>
+               <td>Regular club</td>
+               
+               <td id = "price4">$13</td>
+               
+               <td><input type="number" name="quantity4" class = "num" value="0" onChange="calculate_cost('quantity4',13,'cost4')"></td>
+               
+               <td class = "result"> <input type="text" readonly name="cost4"></td>
+            </tr>
+
+<tr>
+ <td colspan="4" class ="right">Subtotal $</td>
+<td class = "result"><input type="text" readonly name="subtotal2"></td>
+</tr>
+<tr>
+               <td rowspan = '2' class ="cat_name">Computer club </td>
+               <td>Programming computer games</td>
+<td id = "price5">$18</td>
+<td><input type="number" name="quantity5" class = "num" value="0" onChange="calculate_cost('quantity5',18,'cost5')"></td>
+ <td  class = "result"><input type="text" readonly name="cost5"></td>
+</tr>
+<tr>
+               <td>Web-design</td>
+               
+               <td id = "price6">$17</td>
+               
+               <td><input type="number" class = "num" name="quantity6" value="0" onChange="calculate_cost('quantity6',17,'cost6')"></td>
+               
+               <td  class = "result"><input type="text" readonly name="cost6"></td>
+            </tr>
+<tr>
+ <td colspan="4" class ="right">Subtotal $</td>
+<td class = "result"><input type="text" readonly name="subtotal3"></td>
+</tr>
+<tr>
+ <td colspan="4" class ="right">Total $</td>
+<td class = "result"><input type="text" readonly name="total"></td>
+</tr> 
+<tr>
+<td colspan="4" class ="right" style="background-color: lightblue">Total with sales tax (8.25%) $</td>
+<td class = "result" style="background-color: lightblue"><input type="text" readonly name="total_with_tax"></td>
+</tr>
+<tr>
+<td colspan="4" class ="right" style="background-color: lightblue">Total including registration fee 10$</td>
+<td class = "result" style="background-color: lightblue"><input type="text" readonly name="final"></td>
+</tr>            
+         </table>
+         </div>
+      <div class="col-xs-offset-1 col-xs-6 col-sm-offset-2 col-sm-10">
+        <INPUT type="submit" name="submit" value="submit">
+		<INPUT TYPE="reset" name="reset" value="reset" onClick="clear_all()">
+      </div>
+    </div>
+  </form>
+
+					</div>
+					
+
+	        </div>
+	    </div>
+
+	    <!-- Footer -->
+	    <div class="footer">
+	    	<div class="container">
+		    	<div class="row">
+		    		<div class="col-footer col-md-3 col-xs-6">
+		    			<h3>Search</h3>
+		    			<div class="portfolio-item">
+							<div class="portfolio-image">
+								<input class="form-control" id="Search" name="Search" type="text"/>
+							</div>
+						</div>
+		    		</div>
+		    		<div class="col-footer col-md-3 col-xs-6">
+		    			<h3>Navigate</h3>
+		    			<ul class="no-list-style footer-navigate-section">
+		    			<li><a href="../index.html">My student's portfolio</a></li>
+		    				<li><a href="pic.html">Pictures</a></li>
+                            <li><a href="idioms.html">Idioms</a></li>		    				
+		    				<li><a href="ct.html">Critical thinking</a></li>
+		    			</ul>
+		    		</div>
+		    		
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Contacts</h3>
+		    			<p class="contact-us-details">
+	        				
+	        			</p>
+		    		</div>
+		    		<div class="col-footer col-md-2 col-xs-6">
+		    			<h3>Stay Connected</h3>
+		    			<ul class="footer-stay-connected no-list-style">
+		    				<li><a href="#" class="facebook">facebook</a></li>
+		    				</ul>
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-md-12">
+		    			<div class="footer-copyright">&copy; 2016 Julia Borodaenko.</div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+<script src="js/form.js"></script> 
+<script src="js/menu.js"></script> 
+        </body>
+</html>

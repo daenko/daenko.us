@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Books</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon.png" />   
+        <link href="https://fonts.googleapis.com/css?family=Candal|Carme|Marmelad|Vesper+Libre" rel="stylesheet">
+         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+     <script src="js/books.js"></script>  
+        </head>
+    <body>
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="true">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" a href="index.html"><img src="img/kids6.png" alt="Kids Site"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li ><a style = "color: red" href="index_kid.html">Home</a></li>
+        <li><a style= "color: green" href="pic.html">Pictures</a></li>
+        <li class="dropdown">
+          <a style= "color: orange" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Activities <span class="caret"></span></a>
+            
+          <ul class="dropdown-menu">
+            <li><a style= "color: orange" href="idioms.html">Idioms</a></li>           
+            <li role="separator" class="divider"></li>
+            <li><a style= "color: blue" href="critical.html">Critical Thinking</a></li>
+             </ul>
+        </li>
+        <li class ="active"><a style= "color:  #aa2d0b; background-color: #0ba8aa;" href="books.html">Our Books</a></li>
+             <li><a style= "color: grey" href="form.html">Order Class</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a style= "color: blue" href="sign.html">Sign in</a></li>
+        
+        <li class="dropdown">
+          <a href="#" style= "color: green" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our classes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Math</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Computer</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Add new class</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+        <!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Books</h1>
+					</div>
+				</div>
+			</div>
+	</div>	        
+        <div class="section">
+	    	<div class="container">
+				<div class="row" id="books">
+					<div class="col-sm-12">
+                        <div class ="books">
+<img class = "books_shell img-responsive" src="img/background1.png"> 
+						<h1 style ="text-align:center">This is our books' catalog</h1>
+						<div class = "table-responsive">
+<script type="text/javascript">
+var books_jenre = new Array("adventure", "mystery", "humor");
+var books = new Array(Book1, Book2, Book3, Book4, Book5, Book6, Book7, Book8, Book9);
+var adventure_books = new Array();
+var mystery_books = new Array();
+var humor_books = new Array();
+/*push items into arrays*/
+   for (var k=0; k < books.length; k++) {
+        if (books[k].jenre == books_jenre[0]) {                            
+            var length1 = adventure_books.push(books[k]);
+       }
+        else if (books[k].jenre == books_jenre[1]) {                            
+            var length2 = mystery_books.push(books[k]);
+            }
+        else {
+            var length3 = humor_books.push(books[k]); 
+            }
+}
+var books_all = new Array(adventure_books,mystery_books, humor_books);
+/*display items*/
+document.write("<table><tr><th></th>");
+for (i=0; i<3; i++) {
+document.write("<th><h3>" +  books_jenre[i] + "</h3></th>");
+}
+document.write("</tr>");
+
+for (j=0; j<3; j++) {
+    document.write("<tr><td></td>");
+        for (k=0; k<3; k++) {
+            document.write("<td>");
+            books_all[k][j].getBook();            
+            document.write("<br></td>");          
+            }
+    document.write("</tr>");
+}
+document.write("</table>");
+</script>						
+					</div>
+				</div>
+			</div>
+		</div>	
+</div>
+<div class="section section-share">
+<script>
+//var first_name = prompt("What is your name?");
+//document.write("<h1 style = 'text-align: center'>Welcome <span style = 'color:red'>", first_name, "</span> to Our Books' Sharing</h1>");
+//alert("Dear " + first_name + "!\nReading is Fun!\nWe'll help you to choose a book!");
+var user_jenre = prompt("Please input 1 if you prefer adventure books,\n2 if you like mystery,\n3 if you want humor books");
+</script>
+	        <div class="container">
+	        	<h2>This is our <script>
+                        if (user_jenre == "1") {
+                            document.write("adventure");
+                        }
+                        else if (user_jenre == "2") {
+                            document.write("mystery");
+                        }
+                        else if (user_jenre == "3") {
+                            document.write("humor");
+                        }
+                        else {
+                            document.write("");
+                        }
+                        </script> books</h2>
+	        	<div class="row">
+	        		<div class="col-md-4 col-sm-6">
+	        			<div class="service-wrapper">
+                            <script>
+                             if (user_jenre == "1") {
+                            Book1.getBook();
+                        }
+                        else if (user_jenre == "2") {
+                            Book2.getBook();
+                        }
+                        else if (user_jenre == "3") {
+                            Book4.getBook();
+                        }
+                        else {
+                            document.write("No books or wrong jenre");
+                        }                            
+                            </script>
+	        			</div>
+	        		</div>
+	        		<div class="col-md-4 col-sm-6">
+	        			<div class="service-wrapper">
+		        			<script>
+		        			if (user_jenre == "1") {
+                            Book7.getBook();
+                        }
+                        else if (user_jenre == "2") {
+                            Book3.getBook();
+                        }
+                        else if (user_jenre == "3") {
+                            Book5.getBook();
+                        }
+                        else {
+                            document.write("No books or wrong jenre");
+                        }                            
+                            </script>
+		        		</div>
+	        		</div>
+	        		<div class="col-md-4 col-sm-6">
+	        			<div class="service-wrapper">
+		        			<script>
+                             if (user_jenre == "1") {
+                            Book8.getBook();
+                        }
+                        else if (user_jenre == "2") {
+                            Book9.getBook();
+                        }
+                        else if (user_jenre == "3") {
+                            Book6.getBook();
+                        }
+                        else {
+                            document.write("No books or wrong jenre");
+                        }                            
+                            </script>
+		        		</div>
+	        		</div>	        		       		
+	        	</div>
+	        </div>
+	    </div>
+	      </div>  		
+	        		
+	    <!-- Footer -->
+	    <div class="footer">
+	    	<div class="container">
+		    	<div class="row">
+		    		<div class="col-footer col-md-3 col-xs-6">
+		    			<h3>Search</h3>
+		    			<div class="portfolio-item">
+							<div class="portfolio-image">
+								<input class="form-control" id="Search" name="Search" type="text"/>
+							</div>
+						</div>
+		    		</div>
+		    		<div class="col-footer col-md-3 col-xs-6">
+		    			<h3>Navigate</h3>
+		    			<ul class="no-list-style footer-navigate-section">
+		    			<li><a href="../index.html">My student's portfolio</a></li>
+		    				<li><a href="pic.html">Pictures</a></li>
+                            <li><a href="idioms.html">Idioms</a></li>		    				
+		    				<li><a href="ct.html">Critical thinking</a></li>
+		    			</ul>
+		    		</div>
+		    		
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Contacts</h3>
+		    			<p class="contact-us-details">
+	        				
+	        			</p>
+		    		</div>
+		    		<div class="col-footer col-md-2 col-xs-6">
+		    			<h3>Stay Connected</h3>
+		    			<ul class="footer-stay-connected no-list-style">
+		    				<li><a href="#" class="facebook">facebook</a></li>
+		    				</ul>
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-md-12">
+		    			<div class="footer-copyright">&copy; 2016 Julia Borodaenko.</div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+<script src="js/menu.js"></script> 
+        </body>
+</html>

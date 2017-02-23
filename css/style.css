@@ -1,0 +1,177 @@
+body { 
+    padding-top: 80px;
+}
+body p{
+    font-family: 'Marmelad', sans-serif;
+    font-size: 16px;
+    }
+
+.logo-wrapper {
+    margin-bottom: 10px;
+    margin-top: -15px;
+    border-right: none;
+}
+.navbar-header {
+        margin-top: -5px;
+}
+nav {
+        background: url("background.png");      
+      height: 110px;         
+}
+.navbar-nav {
+        margin-top:3%;
+        font-family: 'Carme', sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+}
+.navbar-nav li:hover {
+    background-color: #472753;        
+}
+#navbar-collapse {
+        background: url("../img/background5.png");        
+}
+.mainmenu-wrapper {
+        background: url("background.png");
+      font-family: 'Carme', sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+      height: 120px;         
+}
+.mainmenu li{
+ }
+.mainmenu li:hover {
+    background-color:#472753;        
+}
+.mainmenu a:hover {
+    color: white;
+}
+.section-breadcrumbs {
+    background: green; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, yellow,green); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, yellow,green); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, yellow,green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, yellow,green); /* Standard syntax */
+}
+ol.breadcrumb {
+    background: transparent;
+  }
+h3 {
+    color: green;
+    font-size: 18px;
+    margin-top: 9px; 
+    margin-bottom: 9px;   
+}
+.images {
+    position: relative;
+    margin: auto;
+    margin: 5px 0 8px 0px;
+    -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+    color: 0 0 5px #000;    
+}
+.add {
+    position: relative;
+    margin-top: -30px;    
+}
+.btn-warning {
+    font-size: 22px;
+font-family: 'Monda', sans-serif;
+background-color: purple;
+}
+/* Facts page */
+.portfolio-project-name {
+    font-size: 16px;   
+    color: purple;
+    font-weight: bold;
+}
+.portfolio-item {
+    font-size: 14px;
+    font-family: 'Monda', sans-serif;
+    
+}
+ .float_left {
+    float: left;
+    margin: 5px 10px;
+    padding: 5px;   
+}     
+.btn-primary  {
+    margin:0 auto;
+    display:block;
+    background-color: purple;    
+}  
+h2 {
+    color: green;
+    font-size: 26px;
+    font-family: 'Marmelad', sans-serif;
+    border-color: green;    
+}
+.section-share {
+    margin-top: -50px;
+}
+.center_image img{
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.center_image h2{
+    position: absolute;
+    top: 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-align: center;    
+}
+.center_image table {
+    position: absolute;
+    top: 80px;
+    color: white;
+    margin: auto; 
+    display: block;
+}
+#books {
+    background: #f2ffe6;
+
+}
+#books tr, td{    
+    text-align: left;
+    padding-left: 5px;
+    font-size: 18px;       
+}
+.books_shell {
+    width: 100%;
+    margin: auto;    
+    margin-top: -50px;
+}
+#books th {    
+    text-align: center;
+    padding-left: 5px;
+   
+    font-size: 18px;       
+}
+.books h3{
+     margin-bottom: 25px;
+    font-family: 'Monda', sans-serif;   
+}
+#books_all:hover {
+    background: #bdff80;
+}
+input[type=button],input[type=submit], input[type=reset]  {
+			width: 10em;
+            height: 3em;
+            padding: 5px 5px 5px 5px;
+            background-color:purple;
+            color: white;
+            margin: auto; 
+            margin-top: 2%; 
+        border-style:solid;
+     border-width:0.5em;
+     border-color:grey;
+    border-radius: 5px 5px 5px;          
+}
+ #right {
+    text-align: right;
+    margin-top: -20px;
+}
